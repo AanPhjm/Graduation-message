@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỉ Yếu – Mở Thư</title>
+    <link rel="stylesheet" href="thu_ki_yeu.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Ảnh nhân vật -->
+    <div class="photo-stack">
+        <img src="avatar.jpg" class="stack-img img1" onclick="zoomImage(this)">
+        <img src="avatar2.jpg" class="stack-img img2" onclick="zoomImage(this)">
+        <img src="avatar3.jpg" class="stack-img img3" onclick="zoomImage(this)">
+        <img src="avatar4.jpg" class="stack-img img4" onclick="zoomImage(this)">
+    </div>
+
+
+    <!-- Phong thư -->
+    <div class="envelope" onclick="toggleLetter()">
+        <div class="flap"></div>
+        <div class="letter">
+            <p><strong>Dear <em>thanhuwu._</em></strong></p>
+
+            <p>
+                Chúc gái xinh sẽ mạnh mẽ vượt qua mọi kì thi và đạt được mọi ước mơ
+                của em <strong>CỐ LÊN!!!!</strong>
+            </p>
+
+            <p>
+                Còn hôm nay thì cứ chơi đi nha, ngày vui này không được cóa lại
+                lần 2 đâu hehehe.
+            </p>
+
+            <p>
+                Người đẹp kỉ yếu vui vẻ nhe 👩🏻‍🎓
+            </p>
+
+            <p style="text-align:right; margin-top:20px;">
+                Sent by <em>_mahp.naa_</em>
+            </p>
+
+            <button class="next-btn"
+                onclick="event.stopPropagation(); window.location.href='fireworks v2.0.html'">
+                Tiếp →
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="thu_ki_yeu.js"></script>
+<div id="overlay"></div>
+
+</body>
+</html>
