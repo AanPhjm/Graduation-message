@@ -2,9 +2,30 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(to bottom, #66FF66, #eaffea);
+
+    background: linear-gradient(
+        270deg,
+        #ff0000,
+        #ff9900,
+        #ffff00,
+        #33ff00,
+        #00ffff,
+        #0066ff,
+        #cc00ff,
+        #ff0000
+    );
+    background-size: 1600% 1600%;
+    animation: rainbowBG 8s ease infinite;
+
     overflow-x: hidden;
 }
+
+@keyframes rainbowBG {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 /* ICON RƠI */
 .icon {
